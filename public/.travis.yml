@@ -7,4 +7,4 @@ before_install:
     - docker build -t cjb/docker-code --f Dockerfile.dev .
 
 script:
-    - docker run -e CI=true cjb/docker-code npm run test -- --coverage
+    - docker run -e CI=true cjb/docker-code npm run test
